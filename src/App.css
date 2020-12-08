@@ -1,38 +1,123 @@
-.App {
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  letter-spacing: 0.6px;
+}
+
+.wrapper {
+  width: 80%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  padding: 2rem 0rem;
+  margin-top: 2rem;
+}
+
+.wrapper h1 {
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+}
+.wrapper h1 span {
+  color: #ffc659;
+}
+
+.sub-heading {
+  color: #ffffff;
+  opacity: 0.9;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sub-heading span {
+  opacity: 0.5;
+  color: #f9fafb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2rem 0rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  background-color: #ffc659;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #000000;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 100px;
+  margin: 1rem 1rem;
+  letter-spacing: 0.8px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 10px rgba(243, 244, 246, 0.8);
+  transform: scale(1.03);
+}
+
+.card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0rem;
+}
+
+.card {
+  width: 26%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+  background-color: #121314;
+  margin: 1rem;
+  border-radius: 15px 40px 15px 15px;
+  padding: 20px;
+}
+
+.card .img-holder {
+  width: 100%;
+  height: 100px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.img-holder img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card p {
+  color: #f9fafb;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.card .low-opacity {
+  color: #f9fafb;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 0.5rem 0rem;
+}
+
+.low-opacity span {
+  opacity: 0.5;
+  color: #f9fafb;
+}
+
+.link {
+  color: #f9fafb;
 }
