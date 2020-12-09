@@ -65,6 +65,11 @@ button:hover {
   transform: scale(1.03);
 }
 
+button:focus {
+  box-shadow: 0px 0px 20px rgba(243, 244, 246, 0.8);
+  transform: scale(1.03);
+}
+
 .card-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +78,7 @@ button:hover {
 
 .card {
   width: 26%;
-  height: 300px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,13 +89,22 @@ button:hover {
   padding: 20px;
 }
 
+@media only screen and (max-width: 1025px) {
+  .card {
+    min-width: 80%;
+  }
+  .card-wrap {
+    justify-content: center;
+  }
+}
+
 .card .img-holder {
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 .img-holder img {
@@ -103,7 +117,7 @@ button:hover {
   color: #f9fafb;
   font-size: 1.1rem;
   text-align: center;
-  margin: 1rem 0rem;
+  margin: 10px 0rem;
 }
 
 .card .low-opacity {
@@ -111,6 +125,11 @@ button:hover {
   font-size: 1.1rem;
   text-align: center;
   margin: 0.5rem 0rem;
+}
+
+.low-opacity {
+  color: #f9fafb;
+  text-align: center;
 }
 
 .low-opacity span {
